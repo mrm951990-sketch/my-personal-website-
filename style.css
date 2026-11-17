@@ -1,0 +1,404 @@
+
+/* ==============================
+   التنسيقات العامة
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", "Tahoma", sans-serif;
+    background-color: #F4F7FC;
+    color: #26364B;
+    line-height: 1.8;
+}
+
+/* ==============================
+   شريط التنقل
+============================== */
+
+.navbar {
+    background-color: #101C35;
+    padding: 18px 5%;
+    text-align: center;
+    
+    
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+   
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 5px 12px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #42B7E9;
+}
+
+/* ==============================
+   الأقسام العامة
+============================== */
+
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #142D4E;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #2876C7;
+    margin: 12px auto;
+    border-radius: 5px;
+}
+
+section p {
+    color: #536477;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   الصفحة الرئيسية
+============================== */
+
+#home {
+    background: linear-gradient(135deg, #101C35, #174B82);
+    color: white;
+    min-height: 500px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+#home h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    color: #E0ECF9;
+    font-size: 18px;
+}
+
+#home img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #42B7E9;
+    margin: 25px auto;
+}
+
+/* ==============================
+   الأزرار
+============================== */
+
+.btn,
+button {
+    display: inline-block;
+    background-color: #2876C7;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #42B7E9;
+    color: #101C35;
+    transform: translateY(-3px);
+}
+
+/* ==============================
+   من أنا
+============================== */
+
+#about {
+    background-color: white;
+}
+
+#about p {
+    max-width: 850px;
+    margin: 12px auto;
+}
+
+/* ==============================
+   المهارات
+============================== */
+
+#my_skills {
+    background-color: #EEF4FB;
+}
+
+.skill-card {
+    display: inline-block;
+    width: 220px;
+    background-color: white;
+    padding: 25px 18px;
+    margin: 12px;
+    border-radius: 15px;
+    border: 1px solid #DCE7F4;
+    box-shadow: 0 5px 18px rgba(20, 45, 78, 0.08);
+    transition: 0.3s;
+    vertical-align: top;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(20, 45, 78, 0.16);
+}
+
+.skill-card h3 {
+    color: #176BCE;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   الهوايات
+============================== */
+
+#hobbies {
+    background-color: white;
+}
+
+#hobbies ul,
+#hobbies ol {
+    display: inline-block;
+    text-align: right;
+    background-color: #F4F7FC;
+    padding: 25px 45px;
+    margin: 15px;
+    border-radius: 12px;
+    border-right: 4px solid #2876C7;
+}
+
+#hobbies li {
+    padding: 7px;
+    color: #40536B;
+}
+
+/* ==============================
+   التعليم
+============================== */
+
+#education {
+    background-color: #EEF4FB;
+}
+
+table {
+    width: 85%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 18px rgba(20, 45, 78, 0.08);
+}
+
+table th {
+    background-color: #142D4E;
+    color: white;
+    padding: 15px;
+}
+
+table td {
+    padding: 14px;
+    border: 1px solid #DCE7F4;
+}
+
+table tr:hover {
+    background-color: #EAF4FF;
+}
+
+/* ==============================
+   المشاريع
+============================== */
+
+#projects {
+    background-color: white;
+}
+
+.project-card {
+    display: inline-block;
+    width: 280px;
+    min-height: 180px;
+    background-color: #F4F7FC;
+    border: 1px solid #DCE7F4;
+    border-top: 5px solid #2876C7;
+    padding: 25px 18px;
+    margin: 12px;
+    border-radius: 12px;
+    vertical-align: top;
+    box-shadow: 0 5px 18px rgba(20, 45, 78, 0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(20, 45, 78, 0.15);
+}
+
+.project-card h3 {
+    color: #176BCE;
+    margin-bottom: 12px;
+}
+
+/* ==============================
+   الطموحات المستقبلية
+============================== */
+
+#goals {
+    background-color: #EEF4FB;
+}
+
+#goals p {
+    max-width: 850px;
+    margin: 12px auto;
+}
+
+/* ==============================
+   التواصل
+============================== */
+
+#contact {
+    background-color: white;
+}
+
+form {
+    width: 65%;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: #F4F7FC;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(20, 45, 78, 0.10);
+    text-align: right;
+}
+
+form label {
+    display: block;
+    color: #142D4E;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border: 1px solid #CBD8E8;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: white;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid #2876C7;
+}
+
+form textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+}
+
+/* ==============================
+   التذييل
+============================== */
+
+footer {
+    background-color: #101C35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: #DCEAFE;
+    margin: 5px;
+}
+
+footer span {
+    color: #42B7E9;
+    font-weight: bold;
+}
+
+/* ==============================
+   تحسين العرض على الهاتف
+============================== */
+
+@media screen and (max-width: 768px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    .navbar ul li {
+        margin: 6px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+    }
+
+    .skill-card,
+    .project-card {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+}
